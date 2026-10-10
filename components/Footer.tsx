@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
           {/* Brand Info (2 columns wide) */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="inline-flex items-center space-x-3 group">
-              <div className="relative w-16 h-16 flex-shrink-0 bg-white/10 rounded p-0.5 flex items-center justify-center">
+              <div className="relative w-16 h-16 flex-shrink-0 rounded p-0.5 flex items-center justify-center">
                 <Image
                   src="/logo/triangle_logo_cropped.png"
                   alt="Triangle Brand Logo"
@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
             </Link>
 
             <p className="text-xs text-gray-400 leading-relaxed max-w-sm">
-              Premium kitchen storage utilities fabricated with commercial-grade SS 304 by JAY AMBE INDUSTRIES under the brand name Triangle.
+              Premium kitchen storage utilities fabricated with commercial-grade SS 202 by JAY AMBE INDUSTRIES under the brand name Triangle.
             </p>
 
             <div className="p-4 rounded-lg bg-navy-800/60 border border-gold-500/25 max-w-sm">
@@ -84,7 +84,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-xs text-gray-300">
               <li>
                 <Link href="/about" className="hover:text-white transition-colors">
-                  SS 304 Specs Cert
+                  SS 202 Specs Cert
                 </Link>
               </li>
               <li>

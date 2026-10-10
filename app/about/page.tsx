@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ShieldCheck, CreditCard, Factory, Award, CheckCircle2, ArrowLeft } from 'lucide-react';
+import { ShieldCheck, CreditCard, Factory, Award, CheckCircle2, ArrowLeft, MapPin } from 'lucide-react';
 
 export const metadata = {
   title: 'About Us & Payment Terms | Triangle Kitchen Storage Solutions by JAY AMBE INDUSTRIES',
@@ -50,36 +50,38 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-base text-charcoal-600 leading-relaxed">
-              For over two decades, JAY AMBE INDUSTRIES has been a pioneer in engineering and fabricating commercial-grade <strong>SS 304 stainless steel kitchen storage systems</strong> under the brand name <strong>Triangle</strong>. Operating from our state-of-the-art manufacturing facility, we serve architects, interior designers, modular kitchen manufacturers, and enterprise clients worldwide.
+              For over two decades, JAY AMBE INDUSTRIES has been a pioneer in engineering and fabricating commercial-grade <strong>SS 202 stainless steel kitchen storage systems</strong> under the brand name <strong>Triangle</strong>. Operating from our state-of-the-art manufacturing facility, we serve architects, interior designers, modular kitchen manufacturers, and enterprise clients worldwide.
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-2">
-              <div className="bg-white p-4 rounded-xl border border-border-light shadow-subtle flex items-start space-x-3">
+              <div className="bg-white p-4 rounded-xl border border-border-light shadow-subtle flex items-center space-x-3">
                 <Factory className="w-5 h-5 text-gold-600 flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="text-sm font-bold text-navy-900">Direct Factory Producer</h4>
-                  <p className="text-xs text-charcoal-600">Laser cutting, precision bending & robotic welding.</p>
+                  {/* <p className="text-xs text-charcoal-600">Laser cutting, precision bending & robotic welding.</p> */}
                 </div>
               </div>
 
-              <div className="bg-white p-4 rounded-xl border border-border-light shadow-subtle flex items-start space-x-3">
+              <div className="bg-white p-4 rounded-xl border border-border-light shadow-subtle flex items-center space-x-3">
                 <Award className="w-5 h-5 text-gold-600 flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="text-sm font-bold text-navy-900">SS 304 Certified</h4>
-                  <p className="text-xs text-charcoal-600">100% rust-resistant commercial food-grade steel.</p>
+                  <h4 className="text-sm font-bold text-navy-900">SS 202 Certified</h4>
+                  {/* <p className="text-xs text-charcoal-600">100% rust-resistant commercial food-grade steel.</p> */}
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="lg:col-span-5 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-card border border-border-light bg-cream-100">
-            <Image
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop"
-              alt="JAY AMBE INDUSTRIES Manufacturing Factory Floor"
-              fill
-              sizes="(max-width: 1024px) 100vw, 40vw"
-              className="object-cover"
-            />
+          <div className="lg:col-span-5 relative aspect-[16/9] overflow-hidden rounded-[28px]">
+            <div className="absolute inset-0 p-5 sm:p-7 md:p-8">
+              <Image
+                src="/logo/logo_3.png"
+                alt="JAY AMBE INDUSTRIES Manufacturing Factory Floor"
+                fill
+                sizes="( max-width: 768px ) 100vw, ( max-width: 1200px ) 50vw, 33vw"
+                className="object-contain object-center"
+              />
+            </div>
           </div>
         </div>
 
@@ -114,7 +116,7 @@ export default function AboutPage() {
                 Advance Payment Upon Order Confirmation
               </h3>
               <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-                To initiate custom raw material allocation, SS 304 sheet laser cutting, and precision fabrication work, an advance deposit of <strong>90% to 95%</strong> of the total quotation dossier value is required upon technical blueprint approval.
+                To initiate custom raw material allocation, SS 202 sheet cutting, and precision fabrication work, an advance deposit of <strong>90% to 95%</strong> of the total quotation dossier value is required upon technical blueprint approval.
               </p>
               <div className="pt-2 flex items-center space-x-2 text-xs text-gray-400">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
@@ -157,10 +159,9 @@ export default function AboutPage() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs sm:text-sm text-charcoal-700">
             <div className="space-y-2">
-              <h4 className="font-bold text-navy-900">100% SS 304 Grade Certified</h4>
+              <h4 className="font-bold text-navy-900">SS 202 Grade Certified</h4>
               <p className="text-charcoal-600 leading-relaxed">
-                Every batch of steel plate and wire undergoes lab testing for 18% Chromium and 8% Nickel content to guarantee lifetime rust resistance.
-              </p>
+                Manufactured with strict quality standards, our SS 202 products deliver reliable performance and consistent quality you can trust.              </p>
             </div>
             <div className="space-y-2">
               <h4 className="font-bold text-navy-900">Custom Dimensions Available</h4>
@@ -174,6 +175,51 @@ export default function AboutPage() {
                 Our engineering sales desk provides technical advice, installation guidance, and post-delivery assistance for bulk project implementations.
               </p>
             </div>
+          </div>
+        </div>
+
+        {/* Our Location Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 bg-white p-8 sm:p-12 rounded-2xl border border-border-light shadow-subtle items-center">
+          <div className="lg:col-span-5 space-y-6">
+            <div className="inline-flex items-center space-x-2">
+              <span className="w-1.5 h-1.5 bg-gold-500 rounded-full"></span>
+              <span className="text-xs font-semibold uppercase tracking-widest text-gold-600">
+                VISIT OUR FACTORY
+              </span>
+            </div>
+
+            <h3 className="font-sans text-2xl sm:text-3xl font-bold text-navy-900">
+              Our Manufacturing Location
+            </h3>
+
+            <p className="text-sm text-charcoal-600 leading-relaxed">
+              We operate from our central production facility located in Rajkot's premier industrial zone. Clients, architects, and trade partners are welcome to visit our factory by prior appointment.
+            </p>
+
+            <div className="flex items-start space-x-4 bg-[#F7F5F1] p-5 rounded-xl border border-border-light shadow-subtle">
+              <div className="w-10 h-10 bg-gold-50 border border-gold-200/60 rounded-lg flex items-center justify-center flex-shrink-0 text-gold-600">
+                <MapPin className="w-5 h-5" />
+              </div>
+              <div>
+                <h4 className="text-sm font-bold text-navy-900 font-sans">Headquarters & Factory Address</h4>
+                <p className="text-xs text-charcoal-600 mt-1.5 leading-relaxed font-medium">
+                  Plot No-13, Revenue survey no-9, Shivay Industrial Area-A, Lothda, Rajkot, Gujarat - 360024, India
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-7 w-full h-[350px] relative rounded-xl overflow-hidden border border-border-light">
+            <iframe
+              src="https://maps.google.com/maps?q=Plot%20No-13%2C%20Revenue%20survey%20no-9%2C%20Shivay%20Industrial%20Area-A%2C%20Lothda%2C%20Rajkot%2C%20Gujarat%20-%20360024%2C%20India&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute inset-0 w-full h-full"
+            ></iframe>
           </div>
         </div>
 

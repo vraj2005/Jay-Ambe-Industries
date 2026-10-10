@@ -118,15 +118,12 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
             {/* Key Features Bullet List */}
             <div className="space-y-3 bg-white p-6 rounded-xl border border-border-light shadow-subtle">
               <h3 className="text-xs font-bold text-navy-900 uppercase tracking-wider mb-2">
-                Key Performance Features
+                Features
               </h3>
               <div className="space-y-2.5">
-                {product.features.map((feature, idx) => (
-                  <div key={idx} className="flex items-start space-x-3 text-xs sm:text-sm text-charcoal-800">
-                    <CheckCircle2 className="w-4 h-4 text-gold-600 flex-shrink-0 mt-0.5" />
-                    <span>{feature}</span>
+                  <div className="flex items-start space-x-3 text-xs sm:text-sm text-charcoal-800">
+                    {product.useCase}
                   </div>
-                ))}
               </div>
             </div>
 

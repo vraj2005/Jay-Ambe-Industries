@@ -1,11 +1,13 @@
+export interface SizeChart {
+  width: string,
+  length: string,
+  height: string
+}
 export interface ProductSpec {
   materialGrade: string;
-  dimensions: string;
-  tierConfiguration: string;
-  loadCapacity: string;
+  dimensions: SizeChart;
+  holeType: string;
   finish?: string;
-  mountingType?: string;
-  warranty?: string;
 }
 
 export interface Product {
@@ -18,10 +20,9 @@ export interface Product {
   categorySlug: string;
   images: string[];
   specs: ProductSpec;
-  features: string[];
+  useCase: string;
   leadTime?: string;
   isFeatured?: boolean;
-  priceNote?: string;
 }
 
 export interface Category {

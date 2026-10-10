@@ -42,7 +42,7 @@ export default function AllProductsPage() {
             Complete Triangle Product Catalog
           </h1>
           <p className="text-sm text-charcoal-600 leading-relaxed">
-            Browse our full range of SS 304 wire baskets, thali racks, and utility trolleys manufactured by JAY AMBE INDUSTRIES. Select any product to view technical blueprints & specifications.
+            Browse our full range of SS 202 baskets, thali racks, and utility trolleys manufactured by JAY AMBE INDUSTRIES. Select any product to view technical blueprints & specifications.
           </p>
         </div>
 
@@ -79,57 +79,66 @@ export default function AllProductsPage() {
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProducts.map((prod) => (
-            <Link
-              key={prod.id}
-              href={`/products/${prod.slug}`}
-              className="group bg-white rounded-xl overflow-hidden border border-border-light shadow-subtle hover:shadow-card hover:border-gold-400/80 transition-all duration-300 flex flex-col justify-between"
-            >
-              {/* Product Image */}
-              <div className="relative aspect-[4/3] w-full overflow-hidden bg-cream-100">
-                <Image
-                  src={prod.images[0]}
-                  alt={prod.name}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-3 left-3 bg-gold-600 text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-sm">
-                  {prod.category}
-                </div>
-              </div>
+          {filteredProducts.map((prod) => {
+            return (
+              <div
+                key={prod.id}
+                className="group bg-white rounded-xl overflow-hidden border border-border-light shadow-subtle hover:shadow-card hover:border-gold-400/80 transition-all duration-300 flex flex-col justify-between"
+              >
+                {/* Product Image */}
+                <Link
+                  href={`/products/${prod.slug}`}
+                  className="relative aspect-[4/3] w-full overflow-hidden bg-cream-100 block"
+                >
+                  <Image
+                    src={prod.images[0]}
+                    alt={prod.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-3 left-3 bg-gold-600 text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-sm">
+                    {prod.category}
+                  </div>
+                </Link>
 
-              {/* Product Content */}
-              <div className="p-6 flex flex-col flex-grow justify-between space-y-4">
-                <div className="space-y-2">
-                  <h3 className="font-sans text-lg font-bold text-navy-900 group-hover:text-gold-600 transition-colors">
-                    {prod.name}
-                  </h3>
-                  <p className="text-xs text-charcoal-600 line-clamp-2 leading-relaxed">
-                    {prod.tagline}
-                  </p>
-                  <div className="pt-2 text-[11px] text-charcoal-700 space-y-1">
-                    <div className="flex justify-between">
-                      <span className="font-semibold text-navy-900">Grade:</span>
-                      <span>{prod.specs.materialGrade}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-semibold text-navy-900">Capacity:</span>
-                      <span>{prod.specs.loadCapacity}</span>
+                {/* Product Content */}
+                <div className="p-6 flex flex-col flex-grow justify-between space-y-4">
+                  <div className="space-y-2">
+                    <Link href={`/products/${prod.slug}`}>
+                      <h3 className="font-sans text-lg font-bold text-navy-900 group-hover:text-gold-600 transition-colors">
+                        {prod.name}
+                      </h3>
+                    </Link>
+                    <p className="text-xs text-charcoal-600 line-clamp-2 leading-relaxed">
+                      {prod.tagline}
+                    </p>
+                    <div className="pt-2 text-[11px] text-charcoal-700 space-y-1">
+                      <div className="flex justify-between">
+                        <span className="font-semibold text-navy-900">Grade:</span>
+                        <span>{prod.specs.materialGrade}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="font-semibold text-navy-900">Hole Type:</span>
+                        <span>{prod.specs.holeType}</span>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* View Product Specs Button */}
-                <div className="pt-3 border-t border-border-light/60">
-                  <div className="inline-flex items-center justify-between w-full bg-cream-100 group-hover:bg-navy-900 group-hover:text-white text-navy-900 text-xs font-bold uppercase tracking-wider px-4 py-2.5 rounded-sm transition-all duration-200">
-                    <span>View Product Specs & Blueprints</span>
-                    <ArrowRight className="w-4 h-4" />
+                  {/* Action Button */}
+                  <div className="pt-3 border-t border-border-light/60">
+                    <Link
+                      href={`/products/${prod.slug}`}
+                      className="inline-flex items-center justify-center space-x-1.5 w-full bg-cream-100 group-hover:bg-navy-900 group-hover:text-white text-navy-900 text-xs font-bold uppercase tracking-wider py-3 rounded-sm transition-all duration-200"
+                    >
+                      <span>View Specifications</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
                   </div>
                 </div>
               </div>
-            </Link>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>

@@ -117,54 +117,61 @@ export default function CategoryDetailPage({ params }: CategoryPageProps) {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {categoryProducts.map((prod) => (
-                <Link
-                  key={prod.id}
-                  href={`/products/${prod.slug}`}
-                  className="group bg-white rounded-xl overflow-hidden border border-border-light shadow-subtle hover:shadow-card hover:border-gold-400/80 transition-all duration-300 flex flex-col justify-between"
-                >
-                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-cream-100">
-                    <Image
-                      src={prod.images[0]}
-                      alt={prod.name}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute top-3 right-3 bg-navy-900/80 text-white text-[10px] uppercase font-semibold px-2.5 py-1 rounded-sm">
-                      SS 304 Certified
-                    </div>
-                  </div>
+              {categoryProducts.map((prod) => {
+                return (
+                  <div
+                    key={prod.id}
+                    className="group bg-white rounded-xl overflow-hidden border border-border-light shadow-subtle hover:shadow-card hover:border-gold-400/80 transition-all duration-300 flex flex-col justify-between"
+                  >
+                    <Link
+                      href={`/products/${prod.slug}`}
+                      className="relative aspect-[4/3] w-full overflow-hidden bg-cream-100 block"
+                    >
+                      <Image
+                        src={prod.images[0]}
+                        alt={prod.name}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </Link>
 
-                  <div className="p-6 flex flex-col flex-grow justify-between space-y-4">
-                    <div className="space-y-2">
-                      <h3 className="font-sans text-lg font-bold text-navy-900 group-hover:text-gold-600 transition-colors">
-                        {prod.name}
-                      </h3>
-                      <p className="text-xs text-charcoal-600 line-clamp-2 leading-relaxed">
-                        {prod.tagline}
-                      </p>
-                      <div className="pt-2 text-[11px] text-charcoal-700 space-y-1">
-                        <div className="flex justify-between">
-                          <span className="font-semibold text-navy-900">Grade:</span>
-                          <span>{prod.specs.materialGrade}</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="font-semibold text-navy-900">Capacity:</span>
-                          <span>{prod.specs.loadCapacity}</span>
+                    <div className="p-6 flex flex-col flex-grow justify-between space-y-4">
+                      <div className="space-y-2">
+                        <Link href={`/products/${prod.slug}`}>
+                          <h3 className="font-sans text-lg font-bold text-navy-900 group-hover:text-gold-600 transition-colors">
+                            {prod.name}
+                          </h3>
+                        </Link>
+                        <p className="text-xs text-charcoal-600 line-clamp-2 leading-relaxed">
+                          {prod.tagline}
+                        </p>
+                        <div className="pt-2 text-[11px] text-charcoal-700 space-y-1">
+                          <div className="flex justify-between">
+                            <span className="font-semibold text-navy-900">Grade:</span>
+                            <span>{prod.specs.materialGrade}</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span className="font-semibold text-navy-900">Hole Type:</span>
+                            <span>{prod.specs.holeType}</span>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div className="pt-3 border-t border-border-light/60">
-                      <div className="inline-flex items-center justify-between w-full bg-cream-100 group-hover:bg-navy-900 group-hover:text-white text-navy-900 text-xs font-bold uppercase tracking-wider px-4 py-2.5 rounded-sm transition-all duration-200">
-                        <span>View Product Specs & Blueprints</span>
-                        <ArrowRight className="w-4 h-4" />
+                      {/* Action Button */}
+                      <div className="pt-3 border-t border-border-light/60">
+                        <Link
+                          href={`/products/${prod.slug}`}
+                          className="inline-flex items-center justify-center space-x-1.5 w-full bg-cream-100 group-hover:bg-navy-900 group-hover:text-white text-navy-900 text-xs font-bold uppercase tracking-wider py-3 rounded-sm transition-all duration-200"
+                        >
+                          <span>View Specifications</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
                       </div>
                     </div>
                   </div>
-                </Link>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>

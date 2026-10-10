@@ -45,7 +45,7 @@ export const Hero: React.FC = () => {
             {/* Subtext */}
             <p className="text-base sm:text-lg text-charcoal-600 max-w-2xl font-normal leading-relaxed">
               Durable, elegant, and space-saving kitchen organizers built to last.
-              Engineered with commercial-grade SS 304 for modern home efficiency.
+              Engineered with commercial-grade SS 202 for modern home efficiency.
             </p>
 
             {/* Action Buttons */}
@@ -70,25 +70,25 @@ export const Hero: React.FC = () => {
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border-light max-w-xl">
               <div>
                 <div className="font-sans text-2xl sm:text-3xl font-extrabold text-navy-900">
-                  SS 304
+                  SS 202
                 </div>
                 <div className="text-xs sm:text-sm text-charcoal-600 font-medium">
                   Certified Grade
                 </div>
               </div>
 
-              <div>
+              {/* <div>
                 <div className="font-sans text-2xl sm:text-3xl font-extrabold text-navy-900">
                   100%
                 </div>
                 <div className="text-xs sm:text-sm text-charcoal-600 font-medium">
                   Rust Resistant
                 </div>
-              </div>
+              </div> */}
 
               <div>
                 <div className="font-sans text-2xl sm:text-3xl font-extrabold text-navy-900">
-                  25+ Yrs
+                  10+ Yrs
                 </div>
                 <div className="text-xs sm:text-sm text-charcoal-600 font-medium">
                   Industry Experience
@@ -118,8 +118,8 @@ export const Hero: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-navy-900">Architectural Grade SS 304</div>
-                  <div className="text-[10px] text-charcoal-600 font-medium">Precision German Soft-Close Motion</div>
+                  <div className="text-xs font-bold text-navy-900">Architectural Grade SS 202</div>
+                  {/* <div className="text-[10px] text-charcoal-600 font-medium">Precision German Soft-Close Motion</div> */}
                 </div>
               </div>
             </div>
