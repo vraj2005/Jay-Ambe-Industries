@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
 import { Download, MessageCircle } from 'lucide-react';
 import { jsPDF } from 'jspdf';
 
@@ -200,13 +199,6 @@ export const ProductActions: React.FC<ProductActionsProps> = ({
 
   return (
     <div className="flex flex-wrap items-center gap-4 pt-2">
-      <Link
-        href="/#contact-section"
-        className="flex-1 min-w-[200px] text-center bg-navy-900 text-white hover:bg-navy-800 text-xs font-bold uppercase tracking-wider py-4 rounded-sm shadow-md transition-colors"
-      >
-        Request Quote
-      </Link>
-
       <a
         href="https://wa.me/918160934696"
         onClick={handleWhatsAppClick}
