@@ -128,7 +128,18 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
             </div>
 
             {/* Action Buttons */}
-            <ProductActions productName={product.name} />
+            <ProductActions
+              productName={product.name}
+              productCategory={product.category}
+              productTagline={product.tagline}
+              productDescription={product.description}
+              productImage={product.images[0]}
+              materialGrade={product.specs.materialGrade}
+              dimensions={`${product.specs.dimensions.width} W x ${product.specs.dimensions.length} L x ${product.specs.dimensions.height} H`}
+              finish={product.specs.finish}
+              productUseCase={product.useCase}
+              leadTime={product.leadTime}
+            />
 
             {product.leadTime && (
               <div className="text-xs text-charcoal-600 flex items-center space-x-2">
