@@ -22,6 +22,7 @@ export interface Product {
   specs: ProductSpec;
   useCase: string;
   leadTime?: string;
+  priceNote?: string;
   isFeatured?: boolean;
 }
 
