@@ -7,7 +7,7 @@ export const CATEGORIES: Category[] = [
     name: 'PRP Baskets',
     tagline: 'Premium PRP baskets designed for organized and efficient kitchen storage.',
     description: 'Durable stainless steel PRP baskets designed for smooth, practical storage in modern kitchen cabinets and modular kitchen systems.',
-    image: '/Basket/with_items/PRP_Basket/PRP-Cutlery-Basket-4.png',
+    image: '/Basket/with_items/PRP_Basket/PRP-Cutlery-Basket-4.webp',
     itemCount: 'Products Available',
   },
   {
@@ -16,7 +16,7 @@ export const CATEGORIES: Category[] = [
     name: 'Folding Baskets',
     tagline: 'Space-saving folding baskets designed for flexible and convenient kitchen storage.',
     description: 'Practical stainless steel folding baskets that provide easy access, efficient space utilization, and convenient storage when installed in modern kitchen cabinets.',
-    image: '/Basket/without_items/Folding_Basket/Folding_Basket_items.png',
+    image: '/Basket/without_items/Folding_Basket/Folding_Basket_items.webp',
     itemCount: 'Products Available',
   },
 ];
@@ -32,12 +32,12 @@ export const PRODUCTS: Product[] = [
     category: 'PRP Baskets',
     categorySlug: 'prp-basket',
     images: [
-      '/Basket/with_items/PRP_Basket/PRP-Plain-Basket-4.png',
-      '/Basket/without_items/PRP_Basket/PRP-Plain-Basket-4.png',
-      '/Basket/with_items/PRP_Basket/PRP-Plain-Basket-6.png',
-      '/Basket/without_items/PRP_Basket/PRP-Plain-Basket-6.png',
-      '/Basket/with_items/PRP_Basket/PRP-Plain-Basket-8.png',
-      '/Basket/without_items/PRP_Basket/PRP-Plain-Basket-8.png',
+      '/Basket/with_items/PRP_Basket/PRP-Plain-Basket-4.webp',
+      '/Basket/without_items/PRP_Basket/PRP-Plain-Basket-4.webp',
+      '/Basket/with_items/PRP_Basket/PRP-Plain-Basket-6.webp',
+      '/Basket/without_items/PRP_Basket/PRP-Plain-Basket-6.webp',
+      '/Basket/with_items/PRP_Basket/PRP-Plain-Basket-8.webp',
+      '/Basket/without_items/PRP_Basket/PRP-Plain-Basket-8.webp',
     ],
     specs: {
       materialGrade: 'Commercial SS 202',
@@ -61,8 +61,8 @@ export const PRODUCTS: Product[] = [
     category: 'PRP Baskets',
     categorySlug: 'prp-basket',
     images: [
-      '/Basket/with_items/PRP_Basket/PRP-Cutlery-Basket-4.png',
-      '/Basket/without_items/PRP_Basket/PRP-Cutlery-Basket-4.png',
+      '/Basket/with_items/PRP_Basket/PRP-Cutlery-Basket-4.webp',
+      '/Basket/without_items/PRP_Basket/PRP-Cutlery-Basket-4.webp',
     ],
     specs: {
       materialGrade: 'Commercial SS 202',
@@ -86,8 +86,8 @@ export const PRODUCTS: Product[] = [
     category: 'PRP Baskets',
     categorySlug: 'prp-basket',
     images: [
-      '/Basket/with_items/PRP_Basket/PRP-Cup-Saucer-Basket-4.png',
-      '/Basket/without_items/PRP_Basket/PRP-Cup-Basket-4.png',
+      '/Basket/with_items/PRP_Basket/PRP-Cup-Saucer-Basket-4.webp',
+      '/Basket/without_items/PRP_Basket/PRP-Cup-Basket-4.webp',
     ],
     specs: {
       materialGrade: 'Commercial SS 202',
@@ -111,7 +111,7 @@ export const PRODUCTS: Product[] = [
     category: 'PRP Baskets',
     categorySlug: 'prp-basket',
     images: [
-      '/Basket/with_items/PRP_Basket/PRP-Thali-Basket-8.png'
+      '/Basket/with_items/PRP_Basket/PRP-Thali-Basket-8.webp'
     ],
     specs: {
       materialGrade: 'Commercial SS 202',
@@ -135,12 +135,12 @@ export const PRODUCTS: Product[] = [
     category: 'PRP Baskets',
     categorySlug: 'prp-basket',
     images: [
-      '/Basket/with_items/PRP_Basket/PRP-Partition-Basket-4.png',
-      '/Basket/without_items/PRP_Basket/PRP-Partition-Basket-4.png',
-      '/Basket/with_items/PRP_Basket/PRP-Partition-Basket-6.png',
-      '/Basket/without_items/PRP_Basket/PRP-Partition-Basket-6.png',
-      '/Basket/with_items/PRP_Basket/PRP-Partition-Basket-8.png',
-      '/Basket/without_items/PRP_Basket/PRP-Partition-Basket-8.png',
+      '/Basket/with_items/PRP_Basket/PRP-Partition-Basket-4.webp',
+      '/Basket/without_items/PRP_Basket/PRP-Partition-Basket-4.webp',
+      '/Basket/with_items/PRP_Basket/PRP-Partition-Basket-6.webp',
+      '/Basket/without_items/PRP_Basket/PRP-Partition-Basket-6.webp',
+      '/Basket/with_items/PRP_Basket/PRP-Partition-Basket-8.webp',
+      '/Basket/without_items/PRP_Basket/PRP-Partition-Basket-8.webp',
     ],
     specs: {
       materialGrade: 'Commercial SS 202',
@@ -164,8 +164,8 @@ export const PRODUCTS: Product[] = [
     category: 'PRP Baskets',
     categorySlug: 'prp-basket',
     images: [
-      '/Basket/with_items/PRP_Basket/PRP-Bottle-Basket-6.png',
-      '/Basket/without_items/PRP_Basket/PRP-Bottle-Basket-6.png',
+      '/Basket/with_items/PRP_Basket/PRP-Bottle-Basket-6.webp',
+      '/Basket/without_items/PRP_Basket/PRP-Bottle-Basket-6.webp',
     ],
     specs: {
       materialGrade: 'Commercial SS 202',
@@ -189,8 +189,8 @@ export const PRODUCTS: Product[] = [
     category: 'PRP Baskets',
     categorySlug: 'prp-basket',
     images: [
-      '/Basket/with_items/PRP_Basket/PRP-Plate-Basket-6.png',
-      '/Basket/without_items/PRP_Basket/PRP-Plate-Basket-6.png',
+      '/Basket/with_items/PRP_Basket/PRP-Plate-Basket-6.webp',
+      '/Basket/without_items/PRP_Basket/PRP-Plate-Basket-6.webp',
     ],
     specs: {
       materialGrade: 'Commercial SS 202',
@@ -214,8 +214,8 @@ export const PRODUCTS: Product[] = [
     category: 'PRP Baskets',
     categorySlug: 'prp-basket',
     images: [
-      '/Basket/with_items/PRP_Basket/PRP-Glass-Basket-4.png',
-      '/Basket/without_items/PRP_Basket/PRP-Glass-Basket-4.png',
+      '/Basket/with_items/PRP_Basket/PRP-Glass-Basket-4.webp',
+      '/Basket/without_items/PRP_Basket/PRP-Glass-Basket-4.webp',
     ],
     specs: {
       materialGrade: 'Commercial SS 202',
@@ -239,10 +239,10 @@ export const PRODUCTS: Product[] = [
     category: 'PRP Baskets',
     categorySlug: 'prp-basket',
     images: [
-      '/Basket/with_items/PRP_Basket/PRP-PullOut-Double.png',
-      '/Basket/without_items/PRP_Basket/PRP-PullOut-Double.png',
-      '/Basket/with_items/PRP_Basket/PRP-PullOut-Triple.png',
-      '/Basket/without_items/PRP_Basket/PRP-PullOut-Triple.png',
+      '/Basket/with_items/PRP_Basket/PRP-PullOut-Double.webp',
+      '/Basket/without_items/PRP_Basket/PRP-PullOut-Double.webp',
+      '/Basket/with_items/PRP_Basket/PRP-PullOut-Triple.webp',
+      '/Basket/without_items/PRP_Basket/PRP-PullOut-Triple.webp',
     ],
     specs: {
       materialGrade: 'Commercial SS 202',
@@ -268,10 +268,10 @@ export const PRODUCTS: Product[] = [
     category: 'Folding Baskets',
     categorySlug: 'folding-basket',
     images: [
-      '/Basket/with_items/Folding_Basket/Folding-Plain-Basket-4.png',
+      '/Basket/with_items/Folding_Basket/Folding-Plain-Basket-4.webp',
       '/Basket/without_items/Folding_Basket/Folding-Plain-Basket-SquareHole-4',
-      '/Basket/with_items/Folding_Basket/Folding-Plain-Basket-6.png',
-      '/Basket/with_items/Folding_Basket/Folding-Plain-Basket-8.png',
+      '/Basket/with_items/Folding_Basket/Folding-Plain-Basket-6.webp',
+      '/Basket/with_items/Folding_Basket/Folding-Plain-Basket-8.webp',
       '/Basket/without_items/Folding_Basket/Folding-Plain-Basket-SquareHole-8',
     ],
     specs: {
@@ -296,7 +296,7 @@ export const PRODUCTS: Product[] = [
     category: 'Folding Baskets',
     categorySlug: 'folding-basket',
     images: [
-      '/Basket/with_items/Folding_Basket/Folding-Cutlery-Basket-4.png',
+      '/Basket/with_items/Folding_Basket/Folding-Cutlery-Basket-4.webp',
       '/Basket/without_items/Folding_Basket/Folding-Cutlery-Basket-SquareHole-4',
     ],
     specs: {
@@ -321,7 +321,7 @@ export const PRODUCTS: Product[] = [
     category: 'Folding Baskets',
     categorySlug: 'folding-basket',
     images: [
-      '/Basket/with_items/Folding_Basket/Folding-Cup-Basket-4.png',
+      '/Basket/with_items/Folding_Basket/Folding-Cup-Basket-4.webp',
       '/Basket/without_items/Folding_Basket/Folding-Cup-Basket-SquareHole-4',
     ],
     specs: {
@@ -346,7 +346,7 @@ export const PRODUCTS: Product[] = [
     category: 'Folding Baskets',
     categorySlug: 'folding-basket',
     images: [
-      '/Basket/with_items/Folding_Basket/Folding-Thali-Basket-8.png',
+      '/Basket/with_items/Folding_Basket/Folding-Thali-Basket-8.webp',
       '/Basket/without_items/Folding_Basket/Folding-Thali-Basket-SquareHole-8',
     ],
     specs: {
@@ -371,7 +371,7 @@ export const PRODUCTS: Product[] = [
     category: 'Folding Baskets',
     categorySlug: 'folding-basket',
     images: [
-      '/Basket/with_items/Folding_Basket/Folding-Plate-Basket-6.png',
+      '/Basket/with_items/Folding_Basket/Folding-Plate-Basket-6.webp',
       '/Basket/without_items/Folding_Basket/Folding-Plate-Basket-SquareHole-6',
     ],
     specs: {

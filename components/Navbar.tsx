@@ -44,7 +44,7 @@ export const Navbar: React.FC = () => {
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative w-16 h-16 flex-shrink-0 flex items-center justify-center">
               <Image
-                src="/logo/triangle_logo_cropped.png"
+                src="/logo/triangle_logo_cropped.webp"
                 alt="Triangle Brand Logo"
                 fill
                 priority

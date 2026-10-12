@@ -75,7 +75,7 @@ export default function AboutPage() {
           <div className="lg:col-span-5 relative aspect-[16/9] overflow-hidden rounded-[28px]">
             <div className="absolute inset-0 p-5 sm:p-7 md:p-8">
               <Image
-                src="/logo/logo_3.png"
+                src="/logo/logo_3.webp"
                 alt="JAY AMBE INDUSTRIES Manufacturing Factory Floor"
                 fill
                 sizes="( max-width: 768px ) 100vw, ( max-width: 1200px ) 50vw, 33vw"
