@@ -88,10 +88,10 @@ export const Navbar: React.FC = () => {
               Why Us
             </Link>
             <Link
-              href="/#contact-section"
+              href="/contact"
               className="hover:text-navy-900 transition-colors duration-200"
             >
-              Custom Orders
+              Contact Us
             </Link>
           </nav>
 
@@ -172,11 +172,11 @@ export const Navbar: React.FC = () => {
             Why Us
           </Link>
           <Link
-            href="/#contact-section"
+            href="/contact"
             onClick={() => setMobileMenuOpen(false)}
             className="block text-base font-medium text-navy-900 py-1"
           >
-            Custom Orders
+            Contact Us
           </Link>
           <div className="pt-2">
             <a
